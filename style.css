@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Forum&family=Hind+Mysuru:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Forum&family=Hind+Mysuru:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Rose:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+html{
+    font-size: 31.25%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+:root{
+    
+    --orange-color: orange;
+    --white-grey: #F1F1F1;
+    --purple-hover: #e7be64;
+    --background-color: #F9D4B3;
+    
+}
+
+body{
+    background-color: black;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+}
+
+h1{
+    font-family: "Red Rose",sans-serif;
+    font-size: 10rem;
+}
+
+/* Navbar Start */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem;
+    }
+
+
+nav ul{
+    display:  none;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem
+
+}
+.nav-menu ul{
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #F1F1F1;
+    gap: 3rem;
+    
+}
+
+.nav-menu ul li a{
+    color: black;
+}
+nav button{
+    display: none;
+}
+
+nav h2 a, .menu-btn-ctn{
+    font-size: 3.8rem;
+    color: white;
+    font-family: "Lato",sans-serif;
+}
+
+button{
+    font-weight: 600;
+    font-size: 2rem;
+    padding: .8em 1.2em;
+    background-color: var(--purple-light);
+    color: white;
+    border-radius: 3.5rem;
+    border: none;
+}
+
+button:hover{
+   background-color: var(--purple-hover) ;
+   cursor: pointer;
+}
+
+.primary--btn{
+    color: white;
+    background-color: orange;
+}
+/*Navbar End*/
+
+/*first Section Body Section Start*/
+.first-page_body-section{
+    width: 95%;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    margin: 7rem auto 0;
+    padding: 10rem;
+    border: 2px solid white;
+    border-radius: 5rem;
+    color: black;
+    background-color: var(--background-color);
+  
+}
+
+
+    
+    .body-content{
+        max-width: 100%;
+    }
+.body-content-para{
+    max-width: 600px;
+}
+.body-content h1{
+    font-weight: 700;
+    font-size: 5rem;
+   
+}
+
+.body-content p{
+    font-size: 3rem;
+    padding: 1.5em;
+}
+ .dish-image-ctn{
+    margin: 4rem 0 2rem;
+    width: 100%;
+ }
+.dish-image,.hotel-interior_image{
+    width: 100%;
+    height: auto;  
+}
+/* First Page Body Section Start */
+
+/* Mission Section Start */
+.mission-section{
+   margin-top: 8rem;
+   padding: 10rem;
+}
+.mission-content{
+    text-align: center;
+}
+.mission-content h4{
+    font-size: 3rem;
+    color: orange;
+}
+
+.mission-content h1, .feature-section h1{
+    font-size: 4rem;
+    color: white;
+    padding: .7em;
+}
+
+.mission-content p{
+    text-align: justify;
+    text-justify: auto;
+    font-size: 3rem;
+    padding: 1em 0;
+    color: white;
+}
+
+.image-item{
+    margin-top: 10rem;
+}
+/* Mission content end */
+
+/* Feature Section Starts */
+.feature-section{
+    text-align: center;
+}
+.features-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+.features-icon{
+    margin-top: 6rem;
+}
+
+
+.feature-section h4{
+    font-size: 3rem;
+    padding: 0 .5em;
+    color: white
+}
+
+.feature-icon-text p{
+    max-width: 60%;
+    font-size: 3rem;
+    padding: 0 .5em;
+    margin: 0 auto;
+    color: white;
+}/* Feature section Ended */
+
+/* Menu Section Start */
+.menu-section{
+    max-width: 90%;
+    margin: 15rem auto;
+    padding: 0 0 3rem 0;
+    border-radius: 5rem;
+    background-color: white;
+    text-align: center;
+}
+
+.menu-section h4, .feedback-section h4{
+    font-size: 3rem;
+    padding: 1em 0 0;
+}
+.menu-section h1, .feedback-section h1{
+    font-size: 5rem;
+    padding: .5em;
+}
+.menu-container{
+    max-width: 90%;
+    margin: 10rem auto 5rem;
+    background-color:  #F9D4B3;
+    border-radius: 5rem;
+    padding: 5rem 0 0 0;
+    text-align: center
+}
+
+.menu-item .price{
+    font-size: 6rem;
+    padding: .25em;
+}
+.menu-item{
+    display: flex;
+    flex-direction: column;
+    padding: 3.5rem;
+}
+
+.food-item-ctn{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.food-item{
+    max-width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover
+    
+    
+}
+
+.food-item-details h1{
+    font-size: 5rem;
+    
+} 
+
+.food-item-details p{
+    font-size: 3.2rem;
+} /* Menu section End */
+
+/* Vision Section Starts */
+.vision-section{
+    text-align: center;
+}
+.vision-section h4,.team-section h4{
+    color: rgb(248, 177, 46);
+    font-size: 4rem;
+}
+
+.vision-section h1,.team-section h1{
+    font-size: 7rem;
+    padding: .5em 0;
+    font-weight: 800;
+    color: white
+}
+
+.founder-text{
+    width: 90%;
+    max-width: 900px;
+    margin: 5rem auto 0;
+    border: 1px solid white;
+    border-radius: 3rem;
+    background-color: #2E2B2B;
+}
+.founder-text p{
+    text-align: left;
+    color: white;
+    font-size: 2.8rem;
+    padding: 1em .5em 5em;
+}
+
+
+.founder-img{
+    max-width: 90%;
+    height: auto;
+    margin: 5rem auto;
+    border-radius: 3rem;
+}/* Vission Section Ends*/
+
+/* Our Team Section Starts */
+
+.team-section{
+    text-align: center;
+    margin-top: 15rem;
+}
+
+.employee-image{
+    margin-top: 5rem
+}
+
+.employee-image h1{
+    font-size: 5rem;
+    color: white
+}
+
+.employee-image h4{
+    font-size: 4rem;
+    color: white;
+}
+
+.employee-image{
+    max-width: 100%;
+}
+
+.employee-img{
+    width: 70%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+}
+/* Our Team section ended */
+
+/* Feedback Section Starts */
+.feedback-section{
+    max-width: 90%;
+    background-color: white;
+    border-radius: 5rem;
+    margin: 15rem auto;
+    text-align: center;
+}
+
+.avatar-img{
+   height: 15px;
+   width: 15px;
+   object-fit: cover;
+   border-radius: 50%;
+}
+.avatar-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.feedback-container{
+    background-color: #F9D4B3;
+    max-width: 80%;
+    border-radius: 3rem;
+    margin: 10rem auto 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-container p{
+    font-size: 3rem;
+    padding: 2em;
+}
+/* Feedback Section Ended */
+
+/* Contact us section starts */
+.contact-section{
+    text-align: center;
+
+} .hotel-img{
+    max-width: 90%;
+    margin: 0 auto;
+}
+.contact-section-info{
+    margin-top: 10rem;
+}
+.contact-section-info h4{
+    color:#e7be64;
+    font-size: 3rem;
+    padding: .5em;
+}
+.contact-section-info h1{
+    color: white;
+    font-size: 5rem;
+    padding: .5em;
+}
+.contact-section-detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 10rem 0;
+    color: white;
+}
+
+.contact-detail p{
+    font-size: 3.5rem;
+    padding: 0 0 .5em 0;
+}
+.contact-detail h2{
+    font-size: 3rem;
+    padding: .5em 0 0;
+}
+/*==================================================================================*/
+/* Contact Section Next starts */
+.contact-section-next{
+    text-align: center;
+    background-color: #F9D4B3;
+    max-width: 90%;
+    margin: 10rem auto 0;
+    padding: 15rem 0 8rem;
+    border-radius: 5rem;
+}
+.contact-section-next p{
+    font-size: 3rem;
+    padding: .5em;
+}
+
+.contact-section-next h1{
+    font-size: 5rem;
+    padding: .5em;
+}
+/* Input box starts*/
+input{
+    text-align: center;
+    background-color: white;
+    font-size: 4rem;
+    padding:.5em;
+    width: 90%;
+    margin: 1rem auto 2rem;
+    border: none;
+    border-radius: 10rem;;
+
+}
+/* Input box End */
+.secondary--btn{
+    width: 90%;
+    font-size: 3rem;
+}
+/* Contact section Next Ended */
+/* Contact section Ended */
+footer{
+    padding: 15rem 0 6rem;
+    text-align: center;
+    color: white;
+}
+footer h1{
+    font-size: 7rem
+}
+footer p{
+    font-size: 4rem;
+    padding: 1em 0;
+    color: white
+}
+.footer-links ul{
+    margin-top: 4rem;
+}
+.footer-links ul li a{
+    color: white;
+    font-size: 4rem;
+
+}
+.footer-links ul li{
+    margin: 1rem 0;
+}
+footer .logos{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem
+}
+
+.logo{
+    font-size: 6rem;
+}
+
+hr{
+    width: 90%;
+    margin: 0 auto
+}
+.copyright-reserved p{
+    color: white;
+    font-size: 3rem;
+    
+}
+.terms-policy{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (min-width:600px){
+    html{
+        font-size: 46.825%;
+    }
+}
+
+@media (min-width:840px){
+  
+    .first-page_body-section{
+        display: flex;
+    }
+
+    .body-content-para{
+        max-width: 900px;
+    }
+
+    .features-icon{
+        flex-direction:row;
+    }
+
+    .avatar-img{
+        height: 50px;
+        width: 50px;
+    
+     }
+}
+
+@media (min-width: 1024px){
+  html{
+        font-size: 50.4%;
+    } 
+
+    .dish-image{
+        max-width:80%
+    }
+
+    .menu-container{
+        display: flex;
+    
+    }
+
+    .employe-img{
+        max-width: 600px;
+
+    }
+
+    .employee-img-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-links ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+    }
+
+    nav .menu-btn-ctn{
+        display: none;
+    }
+
+    
+
+
+        
+
+    
+    nav button{
+        display: block;
+    }
+ nav ul{
+    display: flex;
+ }
+
+ #order-nav-item{
+    display: none;
+ }
+}
+
